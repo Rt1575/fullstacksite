@@ -8,15 +8,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "prisma:seed": "ts-node prisma/seed.ts"
+    "prisma:seed": "node prisma/seed.js"
   },
   "prisma": {
     "seed": "ts-node prisma/seed.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.8.2",
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.2",
     "mongodb": "latest",
     "next": "^14.0.0",
+    "next-auth": "^4.24.11",
     "prisma": "^6.8.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
